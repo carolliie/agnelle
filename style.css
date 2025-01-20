@@ -588,6 +588,10 @@ body.loaded #nuvem-rosa.visible {
 }
 
 @media (max-width: 640px) {
+    html {
+        overflow-x: hidden !important;
+    }
+    
     .inicio {
         height: 65vh;
     }
