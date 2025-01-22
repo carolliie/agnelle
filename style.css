@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Bloom", serif;
+    src: url("fonts/Bloom-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -730,7 +737,7 @@ body.loaded #nuvem-rosa.visible {
 
     #ver-produtos {
         font-size: 14px;
-        z-index: 0;
+        z-index: 1;
     }
 
     #ver-produtos:hover {
