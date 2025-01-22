@@ -160,7 +160,8 @@
   }
 
   .glider-prev {
-    right: -50%;
+    transform: translateX(34vh);
+    width: fit-content;
   }
 
   .glider-prev,
