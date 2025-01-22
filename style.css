@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Bloom", serif;
+    font-family: "Bloom";
     src: url("/fonts/Bloom-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-    font-family: "Bloom", serif;
+    font-family: "Bloom";
     font-size: 30px;
     color: #FFFFFF;
     display: flex;
@@ -163,7 +163,7 @@ body.loaded #nuvem-superior {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "Bloom", serif;
+    font-family: "Bloom";
     font-size: 30px;
     color: #11589A;
 }
@@ -268,7 +268,7 @@ body.loaded #nuvem-superior {
 }
 
 #encomendar-conteudo span {
-    font-family: "Bloom", serif;
+    font-family: "Bloom";
     font-size: 80px;
     color: #11589A;
 }
@@ -312,7 +312,7 @@ body.loaded #nuvem-superior {
     padding-bottom: 40px;
 
     h1 {
-        font-family: "Bloom", serif;
+        font-family: "Bloom";
         font-size: 50px;
         color: #11589A;
     }
@@ -465,7 +465,7 @@ body.loaded #nuvem-superior {
     font-weight: 500;
 
     h1 {
-        font-family: "Bloom", serif;
+        font-family: "Bloom";
         font-size: 60px;
         color: #11589A;
     }
@@ -568,7 +568,7 @@ body.loaded #nuvem-superior {
     align-items: end;
 
     a {
-        font-family: "Bloom", serif;
+        font-family: "Bloom";
         font-size: 30px;
         text-decoration: none;
         color: #E3839C;
@@ -659,7 +659,7 @@ body.loaded #nuvem-rosa.visible {
     #menu-mobile {
         z-index: 10;
         background-color: #FFFFFF;
-        font-family: "Bloom", serif;
+        font-family: "Bloom";
         font-size: 26px;
         display: flex;
         opacity: 0;
@@ -808,7 +808,7 @@ body.loaded #nuvem-rosa.visible {
     }
 
     #encomendar-conteudo span {
-        font-family: "Bloom", serif;
+        font-family: "Bloom";
         font-size: 45px;
         color: #11589A;
     }
@@ -841,7 +841,7 @@ body.loaded #nuvem-rosa.visible {
         padding: 20px 0 20px 20px;
 
         h1 {
-            font-family: "Bloom", serif;
+            font-family: "Bloom";
             font-size: 40px;
             color: #11589A;
         }
@@ -872,7 +872,7 @@ body.loaded #nuvem-rosa.visible {
         font-size: 17px;
 
         h1 {
-            font-family: "Bloom", serif;
+            font-family: "Bloom";
             font-size: 45px;
             color: #11589A;
         }
