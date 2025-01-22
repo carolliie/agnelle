@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Bloom", serif;
-    src: url("fonts/Bloom-Regular.woff") format("woff");
+    src: url("/fonts/Bloom-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
