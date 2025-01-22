@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Bloom", serif;
-    src: url("fonts/Bloom-Regular.otf") format("opentype");
+    src: url("fonts/Bloom-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -598,7 +598,7 @@ body.loaded #nuvem-rosa.visible {
     html {
         overflow-x: hidden !important;
     }
-    
+
     .inicio {
         height: 65vh;
     }
@@ -641,14 +641,19 @@ body.loaded #nuvem-rosa.visible {
         transition: background-color 0.3s ease;
     }
 
-    #hamburguer:hover {
-        #bar {
-            background-color: #11589A;
-        }
+    #bar.active {
+        display: none;
+        transition: 0.3s ease-in-out;
     }
 
-    #bar.active {
-        background-color: #E3839C;
+    #bar.active:first-of-type {
+        display: block;
+        background-image: url("images/fechar.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 40px;
     }
 
     #menu-mobile {
@@ -667,6 +672,8 @@ body.loaded #nuvem-rosa.visible {
         position: absolute;
         transform: translateY(40%);
         transition: all 0.3s ease-in-out;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
 
         a {
             color: #E3839C;
@@ -810,7 +817,7 @@ body.loaded #nuvem-rosa.visible {
         text-wrap: nowrap;
         text-align: center;
         justify-content: center;
-        width:auto;
+        width: auto;
         padding: 16px 36px;
         font-size: 13px;
         border-radius: 12px;
