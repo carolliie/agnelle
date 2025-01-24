@@ -445,7 +445,7 @@ body.loaded #nuvem-superior {
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image: url("images/background.svg");
     opacity: 0;
@@ -590,7 +590,7 @@ body.loaded #nuvem-superior {
 }
 
 body.loaded #nuvem-rosa.visible {
-    transform: translateY(-124%);
+    transform: translateY(-130%);
     opacity: 1;
 }
 
@@ -918,7 +918,7 @@ body.loaded #nuvem-rosa.visible {
         display: flex;
         flex-direction: column;
         z-index: 300 !important;
-        height: 60vh;
+        height: 62vh;
         overflow: hidden;
     }
 
