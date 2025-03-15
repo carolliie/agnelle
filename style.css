@@ -334,6 +334,10 @@ body.loaded #nuvem-superior {
     padding: 10px 20px;
     font-family: "General sans", serif;
 
+    p {
+        color: #11589A;
+    }
+
     h4 {
         font-size: 20px;
         color: #11589A;
@@ -377,6 +381,10 @@ body.loaded #nuvem-superior {
     width: fit-content;
     padding: 10px 20px;
     font-family: "General sans", serif;
+
+    p {
+        color: #E3839C;
+    }
 
     h4 {
         font-size: 20px;
@@ -521,6 +529,22 @@ body.loaded #nuvem-superior {
     z-index: 300 !important;
     height: 40vh;
     overflow: hidden;
+}
+
+#carolliie {
+    font-family: "General sans", serif;
+    color: #E3839C;
+
+    a {
+        text-decoration: none;
+        color: #E3839C;
+        transition: 0.3s ease-in-out;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #915263;
+    }
 }
 
 #logo-slogan {
