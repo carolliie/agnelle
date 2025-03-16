@@ -1,3 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 45px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+}
+
+.swiper-button-prev:after {
+    content: none !important;
+}
+
+.swiper-button-next:after {
+    content: none !important;
+}
+
 @font-face {
     font-family: "Bloom";
     src: url("/fonts/Bloom-Regular.woff") format("woff");
@@ -7,6 +28,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -120,7 +142,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
 }
 
 #nuvem-esq {
@@ -154,7 +176,7 @@ body.loaded #nuvem-dir {
 
 
 body.loaded #nuvem-superior {
-    transform: translateY(-100%);
+    transform: translateY(-99%);
     opacity: 1;
 }
 
@@ -164,7 +186,7 @@ body.loaded #nuvem-superior {
     flex-direction: column;
     justify-content: center;
     font-family: "Bloom";
-    font-size: 30px;
+    font-size: 60px;
     color: #11589A;
 }
 
@@ -181,6 +203,10 @@ body.loaded #nuvem-superior {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 60px;
+
+    #categoria a {
+        text-decoration: underline;
+    }
 }
 
 .lista-categorias #categoria:nth-child(1) {
@@ -234,7 +260,10 @@ body.loaded #nuvem-superior {
 
 .encomendar {
     height: fit-content;
-    background-color: #AAD0F4;
+    background-image: url('images/encomendar.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 40px;
     border-radius: 40px;
     font-family: "General sans", serif;
@@ -309,7 +338,6 @@ body.loaded #nuvem-superior {
     flex-direction: column;
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 40px;
 
     h1 {
         font-family: "Bloom";
@@ -328,10 +356,11 @@ body.loaded #nuvem-superior {
 }
 
 #card-azul {
+    text-align: start;
     background-color: #CCE5FC;
     border-radius: 25px;
     width: fit-content;
-    padding: 10px 20px;
+    padding: 26px;
     font-family: "General sans", serif;
 
     p {
@@ -340,21 +369,22 @@ body.loaded #nuvem-superior {
 
     h4 {
         font-size: 20px;
+        font-weight: 700;
         color: #11589A;
     }
 }
 
 #preco-azul {
-    margin-top: -20px;
     font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: #11589A;
+    font-weight: 700;
 
     span {
-        font-size: 25px;
+        font-size: 36px;
     }
 }
 
@@ -376,10 +406,11 @@ body.loaded #nuvem-superior {
 }
 
 #card-rosa {
+    text-align: start;
     background-color: #FFEAEF;
     border-radius: 25px;
     width: fit-content;
-    padding: 10px 20px;
+    padding: 26px;
     font-family: "General sans", serif;
 
     p {
@@ -388,21 +419,22 @@ body.loaded #nuvem-superior {
 
     h4 {
         font-size: 20px;
+        font-weight: 700;
         color: #E3839C;
     }
 }
 
 #preco-rosa {
-    margin-top: -20px;
     font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: #E3839C;
+    font-weight: 700;
 
     span {
-        font-size: 25px;
+        font-size: 36px;
     }
 }
 
@@ -436,6 +468,7 @@ body.loaded #nuvem-superior {
 
 .sobre {
     display: flex;
+    text-align: start;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -453,7 +486,7 @@ body.loaded #nuvem-superior {
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url("images/background.svg");
     opacity: 0;
@@ -485,6 +518,8 @@ body.loaded #nuvem-superior {
 }
 
 .banner {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 20px 10px 180px 20px;
     margin-top: -20px;
@@ -492,6 +527,37 @@ body.loaded #nuvem-superior {
     img {
         width: 80%;
     }
+}
+
+#banner-desktop {
+    height: 76vh;
+    width: 100%;
+    padding: 40px;
+    margin: 16px;
+    background-image: url('images/banner-desktop.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 56px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    button {
+        color: #FFFFFF;
+        background-color: #ffffff23;
+        border: #FFFFFF solid 1px;
+        border-radius: 15px;
+        padding: 20px;
+        font-family: 'General sans', serif;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+#banner-desktop button:hover {
+    color: #C06C82;
+    background-color: #FFEAEF;
+    transform: scale(1.04);
 }
 
 .banner.visible {
@@ -558,7 +624,7 @@ body.loaded #nuvem-superior {
     color: #E3839C;
 
     p {
-        margin-top: -16px;
+        transform: translateY(-20px);
     }
 }
 
