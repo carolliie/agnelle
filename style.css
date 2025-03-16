@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/*corrigir carrossel mobile*/
+
 .swiper-wrapper {
     width: 100%;
     height: max-content !important;
@@ -184,9 +186,9 @@ body.loaded #nuvem-superior {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family: "Bloom";
-    font-size: 60px;
+    font-size: 56px;
     color: #11589A;
 }
 
@@ -200,7 +202,6 @@ body.loaded #nuvem-superior {
     font-weight: 700;
     font-size: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     margin-top: 60px;
 
@@ -341,9 +342,13 @@ body.loaded #nuvem-superior {
 
     h1 {
         font-family: "Bloom";
-        font-size: 50px;
+        font-size: 56px;
         color: #11589A;
     }
+}
+
+body.loaded .produtos {
+    animation: fade-in 0.4s ease-in-out;
 }
 
 .lista-produtos {
@@ -521,7 +526,7 @@ body.loaded #nuvem-superior {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 20px 10px 180px 20px;
+    padding: 20px 20px 210px 20px;
     margin-top: -20px;
 
     img {
@@ -577,6 +582,16 @@ body.loaded #nuvem-superior {
         transform: scale(1.0);
     }
 }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .footer {
     background-color: #FFE3EA;
@@ -681,17 +696,17 @@ body.loaded #nuvem-superior {
 }
 
 body.loaded #nuvem-rosa.visible {
-    transform: translateY(-130%);
+    transform: translateY(-165%);
     opacity: 1;
-}
-
-#banner-mobile {
-    display: none;
 }
 
 @media (max-width: 640px) {
     html {
         overflow-x: hidden !important;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 15px;
     }
 
     .inicio {
@@ -762,13 +777,15 @@ body.loaded #nuvem-rosa.visible {
         justify-content: space-evenly;
         align-items: center;
         padding-top: 60px;
-        height: 45vh;
+        padding-bottom: 20px;
+        min-height: 0vh;
         width: 100%;
         position: absolute;
         transform: translateY(40%);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
+        margin-top: -15px;
 
         a {
             color: #E3839C;
@@ -782,6 +799,8 @@ body.loaded #nuvem-rosa.visible {
     }
 
     #menu-mobile.active {
+        height: 54vh;
+        min-height: 54vh; 
         opacity: 1;
     }
 
@@ -807,7 +826,7 @@ body.loaded #nuvem-rosa.visible {
 
     .slogan {
         margin-top: -40px;
-        height: 40vh;
+        height: 50vh;
         font-size: 15px;
         text-align: center;
 
@@ -827,13 +846,13 @@ body.loaded #nuvem-rosa.visible {
     }
 
     #nuvem-superior {
-        width: 180%;
+        width: 200%;
         margin-left: -40%;
     }
 
     body.loaded #nuvem-superior {
-        transform: translateY(-99%);
-        margin-left: -40%;
+        transform: translateY(-98%);
+        margin-left: 0%;
         opacity: 1;
     }
 
@@ -852,20 +871,20 @@ body.loaded #nuvem-rosa.visible {
     }
 
     #categorias-container {
-        transform: translateY(-35%);
-
-        h1 {
-            padding-top: 60px;
-        }
+        transform: translateY(-15%);
     }
 
-    #categoria img {
-        width: 86%;
-        height: auto;
+    #categorias-container h1 {
+        font-size: 40px !important;
+    }
+
+    #categoria {
+        padding: 15px;
         transition: 0.3s ease-in-out;
     }
 
     .lista-categorias {
+        margin-top: 10px;
         font-size: 14px;
     }
 
@@ -913,6 +932,7 @@ body.loaded #nuvem-rosa.visible {
         text-align: center;
         justify-content: center;
         width: auto;
+        margin-top: 20px;
         padding: 16px 36px;
         font-size: 13px;
         border-radius: 12px;
@@ -933,7 +953,6 @@ body.loaded #nuvem-rosa.visible {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 20px 0 20px 20px;
 
         h1 {
             font-family: "Bloom";
@@ -947,10 +966,11 @@ body.loaded #nuvem-rosa.visible {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 85vh;
+        height: 90vh;
         position: relative;
         padding: 10px;
         overflow: hidden;
+        margin-top: -50px;
     }
 
     .sobre::before {
@@ -979,24 +999,27 @@ body.loaded #nuvem-rosa.visible {
     }
 
     .banner {
-        padding: 15px 15px 100px 15px;
-        transition: 0.3s ease-in-out;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .banner:hover {
-        transform: scale(1.02);
+        padding: 12px 12px 40px 12px;
     }
 
     #banner-desktop {
-        display: none;
-    }
+        height: 86vh;
+        width: 100%;
+        background-image: url('images/banner_mobile.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        border-radius: 30px;
+        margin: 4px;
 
-    #banner-mobile {
-        display: block;
+        button {
+            padding: 15px;
+            text-wrap: nowrap;
+            font-size: 14px;
+        }
     }
 
     .footer {
@@ -1028,14 +1051,13 @@ body.loaded #nuvem-rosa.visible {
 
     #nuvem-rosa {
         position: relative;
-        width: 180%;
         opacity: 0;
         z-index: 200 !important;
         transition: 2s ease-in-out;
     }
 
     body.loaded #nuvem-rosa.visible {
-        transform: translateY(-100%);
+        transform: translateY(-136%) scale(1.12);
         opacity: 1;
     }
 }

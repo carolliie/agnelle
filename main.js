@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nuvemRosa = document.querySelectorAll('#nuvem-rosa');
     const sobreSection = document.querySelector('.sobre');
     const encomendar = document.querySelector('.encomendar');
+    const produtos = document.querySelector('.produtos');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(sobreSection);
     observer.observe(encomendar);
+    observer.observe(produtos);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
