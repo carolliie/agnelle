@@ -347,6 +347,11 @@ body.loaded #nuvem-superior {
     }
 }
 
+.swiper-slide h5 p {
+    margin-top: -8px;
+    font-size: 13px;
+}
+
 body.loaded .produtos {
     animation: fade-in 0.4s ease-in-out;
 }
@@ -384,7 +389,7 @@ body.loaded .produtos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     color: #11589A;
     font-weight: 700;
 
@@ -434,7 +439,7 @@ body.loaded .produtos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     color: #E3839C;
     font-weight: 700;
 
