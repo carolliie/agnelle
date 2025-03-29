@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/*corrigir carrossel mobile*/
-
 .swiper-wrapper {
     width: 100%;
     height: max-content !important;
@@ -659,10 +657,10 @@ body.loaded .produtos {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 40px;
-    fill: #E3839C;
 
-    svg {
-        transition: 0.3s ease-in-out;
+    a svg {
+      fill: #E3839C;  
+      transition: 0.3s ease-in-out;
     }
 }
 
