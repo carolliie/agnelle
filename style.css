@@ -465,8 +465,8 @@ body.loaded .produtos {
 
 #produto-imagem {
     overflow: hidden;
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 450px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 10px;
@@ -593,6 +593,7 @@ body.loaded .produtos {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -662,8 +663,8 @@ body.loaded .produtos {
     gap: 40px;
 
     a svg {
-      fill: #E3839C;  
-      transition: 0.3s ease-in-out;
+        fill: #E3839C;
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -806,7 +807,7 @@ body.loaded #nuvem-rosa.visible {
 
     #menu-mobile.active {
         height: 54vh;
-        min-height: 54vh; 
+        min-height: 54vh;
         opacity: 1;
     }
 
@@ -965,6 +966,16 @@ body.loaded #nuvem-rosa.visible {
             font-size: 40px;
             color: #11589A;
         }
+    }
+
+    #produto-imagem {
+        overflow: hidden;
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        transition: 0.3s ease-in-out;
     }
 
     .sobre {
