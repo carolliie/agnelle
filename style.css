@@ -466,7 +466,7 @@ body.loaded .produtos {
 #produto-imagem {
     overflow: hidden;
     width: 350px;
-    height: 450px;
+    height: 380px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 10px;
